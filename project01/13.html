@@ -52,9 +52,21 @@
 			margin-top: 10px;
 		}
 	</style>
+	<link rel="stylesheet" href="bar.css">
+	<script src="page.js"></script>
 </head>
 
-<body>
+<body onload="currentlv();">
+
+<ul id="mynav" class="nav">
+  <li class="navli"><a class="active" href="index.html">Home</a></li>
+  <li class="navli"><a href="javascript:nextPg(-1)">&laquo;Prev</a></li>
+  <li class="navli"><a href="javascript:nextPg(+1)">Next&raquo;</a></li>
+  <li class="navli"><a href="javascript:randPg()">Random</a></li>
+  <li class="navli" style="float: right"><a href="javascript:closeNav()">Hide</a></li>
+  <li class="navli"><a id="levelindicator">Current Level:0</a></li>
+</ul>
+<a href="javascript:openNav()" id="myshowbtn" class="showbtn">Show</a>
 <h1 class="title">A Boat</h1>
 <div class="content">
 <br>
