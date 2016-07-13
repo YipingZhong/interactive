@@ -74,7 +74,7 @@ function openNav() {
 }
 
 function closeNav() {
-	document.getElementById("mynav").style.height = "0";
+	document.getElementById("mynav").style.height = "0px";
     document.getElementById("mynav").style.visibility = "hidden";
 	document.getElementById("myshowbtn").style.opacity = "1";
 }
