@@ -4,47 +4,102 @@
 <head>
 	<title>DEMO 03 - ALARM PAGE</title>
 	<meta charset="UTF-8">
+	<link href="style.css" rel="stylesheet">
+
 	<style type="text/css">
-		body.intro {
+	
+		@import "compass/css3";
+		
+		body {
 			height: 100%;
 			display: block;
-			align-items: center;
-			justify-content: center;
+			background-color: black;
+			color: darkblue;
 		}
 		
 		h1 {
-			margin: 10vh auto 0;
+			margin: 4vh auto 0;
 			text-align: center;
-			width: 25vw;
+			width: 80%;
+			font-size: 10vw;
+			color: DarkMagenta ;
+		}
+		
+		h2 {
+			margin: 4vh auto 0;
+			text-align: left;
+			width: 80%;
+			font-size: 5vw;
+			color: blue;
+		}
+		
+		.timer
+		{
+			margin: 5vh auto 0;
+			color: white;
+			text-align: center;
+			width: 48vw;
+			height: 48vw;
+			border-style: dashed;
+			border-width: 5px;
+			border-color: blue;
+			border-radius: 50%;
+		}
+		
+		.ball
+		{
+			margin: 4vh auto auto 0;
+		}
+		
+		.time
+		{
+			margin: 1vh auto;
 			font-size: 10vw;
 		}
 		
-		.logosec
+		.icons
 		{
-			margin: 25vh auto 0;
+			display: flex;
+			margin: 3vh 18%;
+			width: 80%;
 			text-align: center;
+			vertical-align: middle;
 		}
 		
-		.logo
+		.content
 		{
-			-webkit-animation: spin 3s infinite linear;
-			-webkit-transform-origin: center center;
-			width: 40vw;
-			height: 40vw;
+			display: flex;
+			font-size: 5vw;
 		}
-		
-		@-webkit-keyframes spin {
-			0%   {-webkit-transform: rotate(0deg);}
-			100% {-webkit-transform: rotate(360deg);}
-		}
+	
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 
-<body class="intro">
-<div class="logosec"><img class="logo" src="images/logo.png"></div>
-<br>
-<h1>SPORTS EVENTS REMINDER</h1>
+<body>
+<h1>REMIND ME</h1>
+<div class="content">
+Sport: Volleyball
+<div class="switch">
+    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+    <label for="cmn-toggle-1"></label>
+</div>
+</div>
+<div class="timer">
+<img class="ball" src="images/ball.png">
+<h3 class="time">45:30<h3>
+</div>
+<div class="icons">
+<div class="icon">
+<img class="pic" src="images/trashcan.png">
+</div>
+<div class="icon">
+<img class="pic" src="images/alarm.png">
+</div>
+<div class="icon">
+<img class="pic" src="images/list.png">
+</div>
+</div>
 </body>
 
 </html>
