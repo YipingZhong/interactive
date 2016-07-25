@@ -4,7 +4,6 @@
 <head>
 	<title>DEMO 03 - ALARM PAGE</title>
 	<meta charset="UTF-8">
-	<link href="style.css" rel="stylesheet">
 
 	<style type="text/css">
 	
@@ -68,8 +67,40 @@
 		
 		.content
 		{
+			margin: 1vh 5vw;
+			width: 80%;
 			display: inline-block;
 			font-size: 5vw;
+			text-align:left;
+		}
+		
+		.input
+		{
+			-webkit-appearance: none;
+			text-align:left;
+			width: 80%;
+		}
+		
+		.buttoncreate
+		{
+			padding: 2vw 8vw;
+			color: blue;
+			font-size: 25px;
+			border-radius: 24px;
+		}
+		.buttoncancel
+		{
+			margin: 3vh auto 0;
+			color: orange;
+			font-size: 10px;
+			padding: 1vw 4vw;
+			border-radius: 24px;
+		}
+		
+		.buttons
+		{
+			margin: 5vh auto 0;
+			text-align: center;
 		}
 	
 	</style>
@@ -80,20 +111,17 @@
 <h1>REMIND ME</h1>
 <div class="content">
 Toggle
-<div style="position:absolute;right: 0%;" class="switch">
-    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
-    <label for="cmn-toggle-1"></label>
-</div>
 <br>
 Remind Me Before<br>
-<input type="text" name="time"><br>
+<input class="input" type="text" name="time"><br>
 Alarm
-<div style="position:absolute;right: 0%;" class="switch">
-    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
-    <label for="cmn-toggle-1"></label>
-</div>
+<br>
 Alarm Sound<br>
-<input type="text" name="sound"><br>
+<input class="input" type="text" name="sound"><br>
+</div>
+<div class="buttons">
+<button class="buttoncreate">Create</button><br>
+<button class="buttoncancel">Cancel</button>
 </div>
 </body>
 
