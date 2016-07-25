@@ -2,40 +2,42 @@
 <html>
 
 <head>
-	<title>DEMO 01 - LOADING PAGE</title>
+	<title>DEMO 02 - MAIN PAGE</title>
 	<meta charset="UTF-8">
 	<style type="text/css">
-		body.intro {
+		
+		body {
 			height: 100%;
 			display: block;
-			align-items: center;
-			justify-content: center;
+			background-color: black;
+			color: darkblue;
 		}
 		
 		h1 {
-			margin: 10vh auto 0;
+			margin: 4vh auto 0;
 			text-align: center;
 			width: 80%;
 			font-size: 10vw;
+			color: DarkMagenta ;
 		}
 		
-		.logosec
+		h2 {
+			margin: 4vh auto 0;
+			text-align: left;
+			width: 80%;
+			font-size: 5vw;
+			color: blue;
+		}
+		
+		.timer
 		{
-			margin: 25vh auto 0;
 			text-align: center;
-		}
-		
-		.logo
-		{
-			-webkit-animation: spin 3s infinite linear;
-			-webkit-transform-origin: center center;
-			width: 40vw;
-			height: 40vw;
-		}
-		
-		@-webkit-keyframes spin {
-			0%   {-webkit-transform: rotate(0deg);}
-			100% {-webkit-transform: rotate(360deg);}
+			width: 48vw;
+			height: 48vw;
+			border-style: dashed;
+			border-width: 10px;
+			border-color: blue;
+			border-radius: 50%;
 		}
 		
 		.icon
@@ -46,10 +48,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 
-<body class="intro">
-<div class="logosec"><img class="logo" src="images/logo.png"></div>
-<br>
-<h1>SPORTS EVENTS REMINDER</h1>
+<body>
+<h1>NEXT EVENT</h1>
+<h2>Name: FIVB</h2>
+<h2>Sport: Volleyball</h2>
+<h2>Begin: 28th July 2017</h2>
+<h2>Channel: CCTV 5</h2>
+<div class="timer">
+45:30
+</div>
 </body>
 
 </html>
