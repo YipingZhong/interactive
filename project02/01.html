@@ -7,23 +7,29 @@
 	<style type="text/css">
 		body.intro {
 			height: 100%;
-			display: flex;
+			display: block;
 			align-items: center;
 			justify-content: center;
 		}
 		
 		h1 {
+			position:absolute;
 			text-align: center;
-			margin: -14vh auto 0;
+			top: 40%;
+			left: 30%;
+			right: 30%;
 		}
 		
 		.logo
 		{
-			width: 9vw;
-			height: 9vw;
-			margin: -7vh auto 0;
+			position:absolute;
+			top: 20%;
+			left: 30%;
+			right: 30%;
 			-webkit-animation: spin 5s infinite linear;
 			-webkit-transform-origin: 50% 50%;
+			width: 9vw;
+			height: 9vw;
 		}
 		
 		@-webkit-keyframes spin {
