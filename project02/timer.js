@@ -10,11 +10,11 @@ var interval = setInterval(function() {
 		var sec = i % 60;
 		if (sec >= 10)
 		{
-			$('h3').html(min+":"+sec);
+			$('h3').text(min+":"+sec);
 		}
 		else
 		{
-			$('h3').html(min+":0"+sec);		
+			$('h3').text(min+":0"+sec);		
 		}
 		if (i <= 0) {  	
 			clearInterval(interval);
