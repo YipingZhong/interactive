@@ -25,15 +25,15 @@ html {
 
 .login-heading {
   font-family: "Tenor Sans", sans-serif;
-  font-size: 60%;
+  font-size: 100%;
   color: white;
   margin-top: 0;
   margin-bottom: 4vh;
 }
 
 .input-txt {
-  width: 100%;
-  height: 3vh;
+  width: 120%;
+  height: 4vh;
   
   padding: 0.5vw;
   background-color: white;
