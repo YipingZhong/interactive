@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Tenor+Sans);
+html {
+  background-color: #5D92BA;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+  padding: 12% 0 0;
+}
+
+.login {
+  position: relative;
+  z-index: 1;
+  background: grey;
+  max-width: 40%;
+  height: 25vh;
+  margin: 0 auto 100px;
+  padding: 60px;
+  text-align: center;
+  border-radius: 0.5vw;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.login-heading {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 120%;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 4vh;
+}
+
+.input-txt {
+  width: 100%;
+  height: 5vh;
+  
+  padding: 0.5vw;
+  background-color: white;
+  text-align: left;
+ 
+  border: none;
+  border-radius: 1vw;
+  margin-top: 10px;
+  font-size: 0.5vw;
+  color: black;
+  
+  border-bottom: 1px dotted rgba(250, 250, 250, 0.4);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.input-txt:-moz-placeholder {
+  color: #81aac9;
+}
+.input-txt:-ms-input-placeholder {
+  color: #81aac9;
+}
+.input-txt::-webkit-input-placeholder {
+  color: #81aac9;
+}
+.input-txt:focus {
+  background-color: gold;
+}
+
+.login-footer {
+  margin: 10px 0;
+  overlow: hidden;
+  float: left;
+  width: 100%;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 1vw;
+  background: white;
+  color: black;
+   -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.btn:hover {
+	background-color: lightgreen;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon--min {
+  font-size: .9em;
+}
+
+.lnk {
+  font-size: .8em;
+  line-height: 3em;
+  color: white;
+  text-decoration: none;
+}
